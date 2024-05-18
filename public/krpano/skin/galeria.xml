@@ -1,0 +1,125 @@
+
+<krpano>
+
+<!-- events -->
+	
+	<events onresize="make_gallery(get(activeGallery));" />
+	
+	<!-- layers -->
+	
+	<layer name="gallery" type="container" align="center" width="100%" height="100%" alpha="0" autoalpha="true" bgcolor="0x000000" bgalpha="0.8" keep="true">
+		<layer name="gallery_scrollarea" url="%SWFPATH%/plugins/scrollarea.swf" alturl="%SWFPATH%/plugins/scrollarea.js" keep="true" align="left" width="0" height="100%" zorder="11" direction="h" ondown="set(gallery_scrollarea_start_pos, get(x))"></layer>
+		<layer name="arrow_left_gallery"  align="left"  x="10" keep="true" visible="false" zorder="12" onclick="move_image(left)" url="img/arrow_left.png"  />
+		<layer name="arrow_right_gallery" align="right" x="10" keep="true" visible="false" zorder="12" onclick="move_image(right)" url="img/arrow_right.png" />
+		<layer name="gallery_close" align="righttop" x="10" y="10" keep="true" zorder="12" onclick="hide_gallery();" url="img/close.png" />
+		
+	</layer>
+	
+	<data name="css_texto">
+    	h2 { color:#FFFFFF; font-family:arial; font-weight:normal; font-size:18px; text-align:left; margin-left: 10px; }
+ 	 	p { color:#FFFFFF; font-family:Arial; font-weight:normal; font-size:15px; text-align:left; margin-left: 10px; }
+    </data>
+	<!-- hotspots -->
+	<action name="add_texto">
+		txtadd(nombre_texto,'data:txt_',%1);
+		set(layer[texto].html,get(nombre_texto));
+	</action>
+
+	<!-- styles -->
+	
+	<style name="hs_gallery" onclick="show_gallery(get(galleryname));add_texto(get(gallerytexto));" onhover="showtext(get(gallery[get(galleryname)].title))"/>
+	
+	<!-- data -->
+
+	<gallery name="galeria" title="Ver Galeria" >
+		<img name="img1" url="img/puertowerner/1.jpg"/>
+		<img name="img2" url="img/puertowerner/2.jpg"/>
+		<img name="img3" url="img/puertowerner/3.jpg"/>
+		<img name="img4" url="img/puertowerner/4.jpg"/>
+		<img name="img5" url="img/puertowerner/5.jpg"/>
+		<img name="img6" url="img/puertowerner/6.jpg"/>
+		<img name="img7" url="img/puertowerner/7.jpg"/>
+		<img name="img8" url="img/puertowerner/8.jpg"/>
+		<img name="img9" url="img/puertowerner/9.jpg"/>
+		<img name="img10" url="img/puertowerner/10.jpg"/>
+		
+		
+	</gallery>
+
+	<gallery name="acceso" title="Ver Acceso">
+		<img name="img1" url="img/acceso/a1.jpg"/>
+		<img name="img2" url="img/acceso/a2.jpg"/>
+		<img name="img3" url="img/acceso/a3.jpg"/>
+		<img name="img4" url="img/acceso/a4.jpg"/>
+		<img name="img5" url="img/acceso/a5.jpg"/>
+		<img name="img6" url="img/acceso/a6.jpg"/>
+		<img name="img7" url="img/acceso/a7.jpg"/>
+		<img name="img8" url="img/acceso/a8.jpg"/>
+		<img name="img9" url="img/acceso/a9.jpg"/>
+		<img name="img10" url="img/acceso/a10.jpg"/>
+	</gallery>
+
+	<gallery name="clubnautico" title="Ver Club Nautico">
+		<img name="img1" url="img/clubnautico/cn1.jpg"/>
+		<img name="img2" url="img/clubnautico/cn2.jpg"/>
+		<img name="img3" url="img/clubnautico/cn3.jpg"/>
+		<img name="img4" url="img/clubnautico/cn4.jpg"/>
+		<img name="img5" url="img/clubnautico/cn5.jpg"/>
+		<img name="img6" url="img/clubnautico/cn6.jpg"/>
+		<img name="img7" url="img/clubnautico/cn7.jpg"/>
+		<img name="img8" url="img/clubnautico/cn8.jpg"/>
+		<img name="img9" url="img/clubnautico/cn9.jpg"/>
+		<img name="img10" url="img/clubnautico/cn10.jpg"/>
+		<img name="img11" url="img/clubnautico/cn11.jpg"/>
+	</gallery>
+	
+	<gallery name="laguna" title="Ver Pichilaguna">
+		<img name="img1" url="img/laguna/l1.jpg"/>
+		<img name="img2" url="img/laguna/l2.jpg"/>
+		<img name="img3" url="img/laguna/l3.jpg"/>
+		<img name="img4" url="img/laguna/l4.jpg"/>
+		<img name="img5" url="img/laguna/l5.jpg"/>
+		<img name="img6" url="img/laguna/l6.jpg"/>
+		<img name="img7" url="img/laguna/l7.jpg"/>
+		<img name="img8" url="img/laguna/l8.jpg"/>
+	</gallery>
+
+	<gallery name="mirador" title="Ver Mirador">
+		<img name="img1" url="img/mirador/m1.jpg"/>
+		<img name="img2" url="img/mirador/m2.jpg"/>
+		<img name="img3" url="img/mirador/m3.jpg"/>
+		<img name="img4" url="img/mirador/m4.jpg"/>
+		<img name="img5" url="img/mirador/m5.jpg"/>
+		<img name="img6" url="img/mirador/m6.jpg"/>
+		<img name="img7" url="img/mirador/m7.jpg"/>
+		<img name="img8" url="img/mirador/m8.jpg"/>
+		<img name="img9" url="img/mirador/m9.jpg"/>
+		<img name="img10" url="img/mirador/m10.jpg"/>
+	</gallery>
+
+	<gallery name="parque" title="Ver Parque">
+		<img name="img1" url="img/parque/p1.jpg"/>
+		<img name="img2" url="img/parque/p2.jpg"/>
+		<img name="img3" url="img/parque/p3.jpg"/>
+		<img name="img4" url="img/parque/p4.jpg"/>
+		<img name="img5" url="img/parque/p5.jpg"/>
+		<img name="img6" url="img/parque/p6.jpg"/>
+		<img name="img7" url="img/parque/p7.jpg"/>
+		<img name="img8" url="img/parque/p8.jpg"/>
+		<img name="img9" url="img/parque/p9.jpg"/>
+		<img name="img10" url="img/parque/p10.jpg"/>
+	</gallery>
+	
+	<krpano devices="mobile">
+
+		<layer name="gallery">
+			<layer name="gallery_scrollarea" >
+			</layer>
+			<layer name="arrow_left_gallery"/>
+			<layer name="arrow_right_gallery"/>
+			<layer name="gallery_close"/>
+			<layer name="texto" y="15"/>
+		</layer>
+	</krpano>
+
+</krpano>
