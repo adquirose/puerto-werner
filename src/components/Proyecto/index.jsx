@@ -22,6 +22,7 @@ export const ProyectoContainer = styled.div`
     padding:1rem;
     @media(max-width:420px){
         padding:0;
+        max-height:480px;
     }
 `
 const Parrafo = styled.p`
