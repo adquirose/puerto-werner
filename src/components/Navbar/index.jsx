@@ -29,8 +29,8 @@ const ContainerNav = styled.div`
     left:10px;
     z-index:4;
     border-radius:7px;
-    background-color:rgba(255,255,255,0.75);
-    animation:${props => props.$activo ? slideIn : slideOut} 1s;
+    background-color:rgba(255,255,255,0.95);
+    animation:${props => props.$activo ? slideIn : slideOut} 0.5s;
     animation-fill-mode: forwards;
     
 `
