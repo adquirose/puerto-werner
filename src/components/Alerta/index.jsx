@@ -29,7 +29,7 @@ const ContenedorAlerta = styled.div`
     z-index: 1000;
     width: 100%;
     left: 0;
-    top: 1.25rem; /* 20px */
+    top: 1.25rem; 
     position: fixed;
     display: flex;
     justify-content: center;

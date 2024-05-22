@@ -7,6 +7,7 @@ const KrpanoContainer = styled.div`
     height:100%;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
+    position:relative;
 `
 
 // const slideOut = keyframes`
