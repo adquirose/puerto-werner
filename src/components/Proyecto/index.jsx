@@ -3,7 +3,7 @@ import Logo from "../../assets/logo.png"
 
 export const ProyectoContainer = styled.div`
     max-width:520px;
-    min-width:360px;
+    min-width:340px;
     width:90%;
     height:100%;
     max-height:520px;
@@ -21,8 +21,9 @@ export const ProyectoContainer = styled.div`
     align-items:center;
     padding:1rem;
     @media(max-width:420px){
-        padding:0;
+        padding:0.75rem;
         max-height:480px;
+       
     }
 `
 const Parrafo = styled.p`

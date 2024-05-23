@@ -1,4 +1,3 @@
-
 import styled, { keyframes } from "styled-components"
 import theme from '../../constants'
 import { useEffect } from "react";

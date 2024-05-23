@@ -39,7 +39,7 @@ function App() {
       case "galeria":
         return <Galeria estado={estado} setEstado={setEstado}/>
       case "contacto":
-        return <Contacto/>
+        return <Contacto estado={estado} setEstado={setEstado}/>
       case "club-nautico":
         return <ClubNautico estado={estado} setEstado={setEstado}/>
       default:
@@ -48,7 +48,7 @@ function App() {
   }
   return(
     <>
-      <Navbar handleClick={handleClick}/>
+      <Navbar handleClick={handleClick} />
       <Krpano/>
 
       {sectionActiva && 
