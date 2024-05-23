@@ -30,7 +30,7 @@ const ContainerNav = styled.div`
     top:10px;
     z-index:4;
     border-radius:7px;
-    background-color:rgba(255,255,255,0.95);
+    background-color:rgba(255,255,255,0.7);
     animation:${props => props.$animation} 0.5s;
     animation-fill-mode: forwards;
 `
