@@ -1,14 +1,15 @@
 /* eslint-disable react/prop-types */
 import styled, { keyframes } from 'styled-components'
 import { Menu2, ERemove } from '../Icons'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import useScreenSize from '../../hooks/useScreenSize';
 const slideIn = keyframes`
     0% {
         transform: translateX(-280px); 
         opacity: 0;
     }
     100% {
-        transform: translateX(0px);
+        transform: translateX(10px);
         opacity: 1;
     }
 `;
@@ -24,15 +25,14 @@ const slideOut = keyframes`
 `;
 const ContainerNav = styled.div`
     width:280px;
+    opacity:0;
     position:absolute;
     top:10px;
-    left:10px;
     z-index:4;
     border-radius:7px;
     background-color:rgba(255,255,255,0.95);
-    animation:${props => props.$activo ? slideIn : slideOut} 0.5s;
+    animation:${props => props.$animation} 0.5s;
     animation-fill-mode: forwards;
-    
 `
 const List = styled.ul`
     margin:0;
@@ -56,9 +56,6 @@ const Item = styled.li`
     } 
 `
 const Button = styled.button`
-    // width:50px;
-    // height:50px;
- 
     border:none;
     background:none;
     cursor:pointer;
@@ -67,15 +64,35 @@ const Button = styled.button`
 
 const Navbar = ({handleClick}) => {
     const [activo, setActivo] = useState(false)
-    const handleOnClick = () => {
-        setActivo(!activo)
+    const [animation, setAnimation] = useState(null)
+    const { width } = useScreenSize()
+
+    useEffect(() => {
+        if(width > 500){
+            setAnimation(slideIn)
+            setActivo(true)
+        }else{
+            setAnimation(slideOut)
+            setActivo(false)
+        }
+    },[width])
+
+    const handleAnimation = () => {
+        if(!activo){
+            setAnimation(slideIn)
+            setActivo(true)  
+        }else{
+            setAnimation(slideOut)
+            setActivo(false)
+        }
     }
+
     return(
-        <>
-            <ContainerNav $activo={activo}>
+        <>  
+            <ContainerNav $animation={animation}>
                 <div style={{position:'absolute', top:'10px', right:'10px', zIndex:'10'}}>
-                    <Button onClick={handleOnClick}>
-                        <ERemove width={36} height={36}/>
+                    <Button onClick={handleAnimation}>
+                        <ERemove width={32} height={32}/>
                     </Button>
                 </div>
                 <List>
@@ -86,15 +103,14 @@ const Navbar = ({handleClick}) => {
                     <Item onClick={() => handleClick('club-nautico')}>Club Nautico</Item>
                 </List>
             </ContainerNav>
-            {!activo &&
-                <div style={{position:'absolute', top:'10px', left:'10px', zIndex:'10'}}>
-                    <Button onClick={handleOnClick}>
-                        <Menu2  fill="white" width={42} height={42}/>
-                    </Button>
-                </div>
-            }   
-                
-            
+    
+        {!activo && 
+            <div style={{position:'absolute', top:'10px', left:'10px', zIndex:'10'}}>
+                <Button onClick={handleAnimation}>
+                    <Menu2 fill="white" width={42} height={42}/>
+                </Button>
+            </div>
+        }
         </>
     )
 }

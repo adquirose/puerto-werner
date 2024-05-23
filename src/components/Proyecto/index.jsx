@@ -6,7 +6,7 @@ export const ProyectoContainer = styled.div`
     min-width:360px;
     width:90%;
     height:100%;
-    max-height:680px;
+    max-height:520px;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
     z-index:6;

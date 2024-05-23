@@ -15,7 +15,7 @@ const INITIAL_STATE = {
   sectionActiva:false
 }
 const Background = styled.div`
-  background-color: rgba(255,255,255,0.35);
+  background-color: rgba(255,255,255,0.75);
   width:100%;
   height:100%;
   grid-row: 1 / -1 ;
@@ -28,10 +28,10 @@ function App() {
   const handleClick = (name) => {
     setEstado({...estado, sectionActiva: name})
   }
+  
   const renderSection = () => {
     switch (sectionActiva) {
       case "proyecto":{
-        console.log('render proyecto')
         return <Proyecto/>
       }
       case "ubicacion":
