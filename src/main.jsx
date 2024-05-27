@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import AppN from './AppN.jsx'
 import './index.css'
 import WebFont from 'webfontloader'
 
@@ -10,5 +10,5 @@ WebFont.load({
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <App />,
+  <AppN />,
 )
