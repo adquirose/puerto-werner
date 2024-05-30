@@ -4,6 +4,7 @@ import useKrpano from 'react-krpano-hooks'
 import styled, { keyframes } from 'styled-components'
 import BtnUser from '../../elements/BtnUser'
 import useObtenerLotes from '../../hooks/useObtenerLotes'
+import { LogoWhatsapp } from '../Icons' 
 
 const slideIn = keyframes`
     0% {
@@ -27,53 +28,97 @@ const FichaContainer = styled.div`
     -moz-box-shadow: 17px 20px 36px -15px rgba(0,0,0,0.75);
     box-shadow: 17px 20px 36px -15px rgba(0,0,0,0.75);
     width:340px;
-    height:420px;
-    background-color:rgba(255,255,255,0.9);
+    height:480px;
+    background-color:rgba(255,255,255,0.95);
     border-radius:5px;
     display:flex;
     flex-direction:column;
     position:relative;
     top:60px;
-    padding:2rem;
-    left:10px;
+    padding:0.5rem;
+    left:5px;
     animation:${slideIn} 1s;
     position:absolute;
+    z-index:5;
+    // background:red;
 `
 const Button = styled.button`
     border:none;
-    padding:0.85rem 2rem;
+    padding:0.5rem 1rem;
+    max-width:120px;
     border-radius:5px;
     background:#5B69E2;
-    color:white;
+    background:${props => props.background ? props.background :'#5B69E2'};
+    color:${props => props.color ? props.color: 'white'};
     cursor:pointer;
+    font-size:0.75rem;
+`
+const Image = styled.img`
+    width:100%;
+    src:${props => props.src};
+
 `
 const ButtonGroup = styled.div`
-    position:absolute;
-    bottom:2rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding-top:18px;
+    box-sizing:border-box;
+    width:auto;
+`
+const ContainerTitulo = styled.div`
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    box-sizing:border-box;
+    padding:0 1rem;
 `
 const Titulo = styled.h2`
-    font-size:2.25rem;
+    font-size:2rem;
+    font-weight:500;
     color:black;
     margin:0;
+    line-height:1.75;
 `
 const P = styled.p`
-    font-size:1.25rem;
+    font-size: 1rem;
     margin:0.5rem 0;
     text-transform:capitalize;
+    
 `
+const ContainerText = styled.div`
+    height:175px;
+    width:100%;
+    overflow-y:auto;
+    box-sizing:border-box;
+    padding:0 1rem;
+`
+const linkWs = id => {
+    return `https://wa.me/15551234567?text=Hola%20Estoy%20interesado%20en%20el%20lote%20${id}`
+}
 const Ficha = ({ dataLote = {}, setVisibleFicha, visibleFicha }) => {
     return(
         <FichaContainer $visibleFicha={visibleFicha}>
-            <Titulo>Lote {dataLote.nombreLote}</Titulo>
-            <P>Estado: {dataLote.estado}</P>
-            <P>Valor: {dataLote.valor} UF</P>
-            <P>Superficie: {dataLote.superficie} M2</P>
-            <P>Servidumbre: {dataLote.servidumbre} M2</P>
-            <P>Caracteristicas <br/>
-                {dataLote.caracteristica}
-            </P>
+            <Image src={`images/fichas/foto${dataLote.html}.jpg`}/>
+            <ContainerTitulo>
+                <Titulo>Lote {dataLote.nombreLote}</Titulo>
+                <Button background="none" onClick={() => window.open(linkWs(dataLote.html),'blank')}>
+                    <LogoWhatsapp fill="black" width="36" height="36"/>
+                </Button>
+            </ContainerTitulo>
+            <ContainerText>
+                <P>Estado: {dataLote.estado}</P>
+                <P>Valor: {dataLote.valor} UF</P>
+                <P>Superficie: {dataLote.superficie} M2</P>
+                <P>Servidumbre: {dataLote.servidumbre} M2</P>
+                <P>Caracteristicas: </P>
+                <P>
+                    {dataLote.caracteristica}
+                </P>
+            </ContainerText>
             <ButtonGroup>
-                <Button type="Button" onClick={() => setVisibleFicha(!visibleFicha)}>Continuar</Button>
+                <Button type="Button" onClick={() => setVisibleFicha(!visibleFicha)}>CONTINUAR</Button>
+                <Button type="Button" onClick={() => window.open('/catalogo.pdf')}>DESCARGAR BROCHURE</Button>
             </ButtonGroup> 
         </FichaContainer>
     )

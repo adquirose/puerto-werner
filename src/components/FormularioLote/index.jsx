@@ -13,14 +13,17 @@ import theme from '../../constants'
 
 const FormContainer = styled.div`
     border: 1px solid gray;
-    max-width:320px;
+    max-width:360px;
     width: 100%;
-    height: 620px;
+    max-height: 620px;
+    overflow-y:auto;
     box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,.05);
     border-radius: 0.625rem;
-    padding: 2rem;
+    padding: 1.25rem;
+   
     @media(max-width:420px){
         padding: 16px;
+        max-width:320px;
     }
 `
 const Container = styled.div`
@@ -29,19 +32,20 @@ const Container = styled.div`
     display:flex;
     justify-content:center;
     align-items:center;
+   
 `
 const Form = styled.form`
     height:100%;
     max-width:100%;
     display:grid;
-    grid-gap:5px;
-    grid-template-columns:repeat(auto-fill,minmax(300px, 1fr));
+    grid-gap:2px;
+    grid-template-columns:repeat(auto-fill,minmax(320px, 1fr));
     
     grid-auto-rows:auto;
 `
 const Label = styled.label`
     max-width:190px;
-    min-width:100px;
+    min-width:180px;
     font-size: 1.25rem; 
     align-self:center;
     margin-right:1rem;
@@ -50,8 +54,8 @@ const Input = styled.input`
     background: ${theme.grisClaro};
     cursor: pointer;
     min-width:40px;
-    max-width:150px;
-    
+    max-width:220px;
+    width:100%;
     border-radius: 0.25rem;
     border: none;
     position: relative;
@@ -68,13 +72,14 @@ const TextArea = styled.textarea`
     cursor: pointer;
     border-radius: 0.25rem;
     border: none;
-    height: 200px; 
+    max-height: 120px; 
+    width:100%;
     min-width: 320px;
     box-sizing:border-box;
     padding-left:1.25rem;
     margin-top:0.5rem;
     padding-top:1rem;
-    position:relative;
+    
     font-size: 1.25rem; 
     font-family:'Work Sans', sans-serif; 
     transition: .5s ease all;
@@ -88,7 +93,7 @@ const TextArea = styled.textarea`
 const InputLabel = styled.div`
     display:flex;
     width:100%;
-    margin:0.5rem 0;
+    margin:0.25rem 0;
     box-sizing:border-box;
 `
 const Button = styled.button`
