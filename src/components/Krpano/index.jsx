@@ -94,7 +94,7 @@ const ContainerText = styled.div`
     padding:0 1rem;
 `
 const linkWs = id => {
-    return `https://wa.me/15551234567?text=Hola%20Estoy%20interesado%20en%20el%20lote%20${id}`
+    return `https://wa.me/56978248529?text=Hola%20Estoy%20interesado%20en%20el%20lote%20${id}`
 }
 const Ficha = ({ dataLote = {}, setVisibleFicha, visibleFicha }) => {
     return(

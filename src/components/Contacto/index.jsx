@@ -101,7 +101,7 @@ const Contacto = () => {
             </div>
         `
         const info = {
-            to:'adquirose@gmail.com',
+            to:'puertowerner@gmail.com"',
             replyTo: email,
             subject:'Formulario Contacto',
             text:'Puerto Werner',
