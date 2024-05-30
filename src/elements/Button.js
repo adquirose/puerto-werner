@@ -1,29 +1,26 @@
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-const Boton = styled(Link)`
+const Button = styled.button`
     background: ${(props) => (props.$primario ? '#5B69E2' : '#000')};
-    width: ${(props) => props.$conIcono ? '15.62rem' : 'auto'}; /* 250px */
-    margin-left: 1.25rem; /* 20px */
+    width: 48px;
+    height: 48px;
     border: none;
-    border-radius: 0.625rem; /* 10px */
+    border-radius: 50%; /* 10px */
     color: #fff;
     font-family: 'Work Sans', sans-serif;
-    height: 3.75rem; /* 60px */
-    padding: 1.25rem 1.87rem; /* 20px 30px */
+    padding: 0px;
     font-size: 1.25rem; /* 20px */
     font-weight: 500;
     cursor: pointer;
     text-decoration: none;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    justify-content: center;
     align-items: center;
     outline: none;
- 
     svg {
-        height: ${(props) => props.$iconoGrande ? '100%' : '0.75rem;'};  /* 12px */
+        height: 32px;
         fill: white;
     }
 `;
 
-export default Boton;
+export default Button;

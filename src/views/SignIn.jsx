@@ -3,30 +3,29 @@ import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { auth } from '../firebase/firebaseConfig'
+import { Link } from 'react-router-dom';
+import ImgLogo from '../assets/logo2.png'
 
-import Button from '../elements/Button'
-import SvgLogin from '../assets/imagenes/login.svg?react'
 import Alerta from '../components/Alerta'
 import theme from '../constants';
 
-const Svg = styled(SvgLogin)`
-    width:100%;
-    max-height:12.5rem;
-    margin-bottom:1.25rem;
-`
-const Formulario = styled.form`
-    grid-area:content;
+const Container = styled.div`
     background:gray;
-    width:100%;
-    height:520px;
-    max-width:420px;
-    justify-self:center;
-    align-self:center;
-    border-radius:5px;
     display:flex;
     flex-direction:column;
+    width:100vw;
+    height:100vh;
     justify-content:center;
-    align-items:center
+    align-items:center;
+`
+const Formulario = styled.form`
+    max-width:340px;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    border-radius:5px;
 `;
 const ContenedorBoton = styled.div`
     display: flex;
@@ -40,7 +39,7 @@ export const Input = styled.input`
     border-radius: 0.25rem;
     border:none;
     height: 2.25rem; 
-    width: 90%;
+    width: 70%;
     padding: 0 1.25rem; 
     font-size: 1rem; 
     transition: .5s ease all;
@@ -48,6 +47,38 @@ export const Input = styled.input`
         background: ${theme.grisClaro2};
     }
 `;
+const Logo = styled.img`
+    width:100%;
+    max-width:220px;
+    padding-bottom:36px;
+`
+Logo.defaultProps={
+    src:ImgLogo
+}
+const Button = styled(Link)`
+    background: ${(props) => (props.$primario ? '#5B69E2' : '#000')};
+    width: ${(props) => props.$conIcono ? '15.62rem' : 'auto'}; /* 250px */
+    border: none;
+    border-radius: 0.625rem; /* 10px */
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    height: 3.75rem; /* 60px */
+    padding: 1.25rem 1.87rem; /* 20px 30px */
+    font-size: 1.25rem; /* 20px */
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+ 
+    svg {
+        height: ${(props) => props.$iconoGrande ? '100%' : '0.75rem;'};  /* 12px */
+        fill: white;
+    }
+`;
+
 const INITIAL_STATE_ALERTA = {
     active: false, tipo:'', mensaje:'' 
 }
@@ -98,9 +129,10 @@ const SignIn = () => {
     }
     const { email, password } = data 
     return(
-        <>
+        <Container>
+            <Logo/>
             <Formulario onSubmit={handleOnSubmit}>
-                <Svg/>
+                
                 <Input 
                     type="email" 
                     name="email"
@@ -119,7 +151,7 @@ const SignIn = () => {
                 </ContenedorBoton>
             </Formulario>
             <Alerta alerta={alerta} setAlerta={setAlerta}/>
-        </>
+        </Container>
     )
 }
 export default SignIn

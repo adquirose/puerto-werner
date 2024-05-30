@@ -3,6 +3,7 @@ import styled, { keyframes } from 'styled-components'
 import { Menu2, ERemove } from '../Icons'
 import { useState, useEffect } from 'react'
 import useScreenSize from '../../hooks/useScreenSize';
+
 const slideIn = keyframes`
     0% {
         transform: translateX(-280px); 

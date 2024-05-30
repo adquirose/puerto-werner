@@ -4,12 +4,11 @@
 	<include url="skin/vistageneral.xml" />
 	<include url="plugins/showtext.xml" />
     <include url="skin/hotspots-actions.xml" />
-    <include url="skin/spots.xml" />
-    <include url="skin/ficha.xml" />
 	<include url="skin/vtourskin_design_117.xml" />
 
   	<include url="plugins/swipe_gallery.xml"/>
     <include url="skin/galeria.xml"/>
+	<include url="skin/compass/compass.xml" />
 
 
 	<!-- set skin settings: bingmaps? gyro? thumbnails? tooltips? -->
@@ -67,6 +66,7 @@
      
      <style name="skin_hotspotstyle4" scale="0.5" handcursor="false" edge="bottomleft" align="bottom" alpha="1"/>
   
+	 <layer name="logo" url="skin/logo2.png" scale="0.7" visible="true" keep="true" align="top" x="15" y="0" />
 
 
 	 <textstyle name="default"
@@ -113,9 +113,9 @@
 	</action>
 
 
-	 <scene name="scene_master" title="Masterplan 360º" onstart="mostrar_btn_vistageneral(false);generar_spots(1,43);generar_spots(45,46);" thumburl="panos/master.tiles/thumb.jpg" lat="" lng="" heading="">
+	 <scene name="scene_master" title="Masterplan 360º" onstart="" thumburl="panos/master.tiles/thumb.jpg" lat="" lng="" heading="">
 
-		<view hlookat="4413.795" vlookat="34.769" fovtype="MFOV" fov="110.780" maxpixelzoom="2.0" fovmin="70" fovmax="130" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-33" vlookatmax="90"
+		<view hlookat="4411.389" vlookat="26.203" fovtype="MFOV" fov="112" maxpixelzoom="2.0" fovmin="70" fovmax="130" limitview="range" hlookatmin="-180" hlookatmax="180" vlookatmin="-33" vlookatmax="90"
  />
 
 			<preview url="panos/master.tiles/preview.jpg" />
@@ -144,8 +144,12 @@
 	<hotspot name="hito5" style="skin_hotspotstyle4" url="skin/spots/5.png" ath="148.813" atv="1.957"/>
 
 
-
-
+<action name="startup_compass">
+	   
+	    <!-- SET HEADING -->
+	        
+	        set(heading, 360);
+</action>
 
 	</scene>
 

@@ -12,27 +12,36 @@ import SelectEstados from '../SelectEstados/index.jsx'
 import theme from '../../constants'
 
 const FormContainer = styled.div`
-    grid-area:content;
     border: 1px solid gray;
-    width:420px;
-    height:500px;
-    justify-self:center;
-    align-self:center;
-    box-shadow: 0px 1.25rem 2.5rem rgba(0,0,0,.05);
+    max-width:320px;
+    width: 100%;
+    height: 620px;
+    box-shadow: 0 1.25rem 2.5rem rgba(0,0,0,.05);
     border-radius: 0.625rem;
-    padding:2rem;
+    padding: 2rem;
+    @media(max-width:420px){
+        padding: 16px;
+    }
+`
+const Container = styled.div`
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 `
 const Form = styled.form`
-    width:100%;
+    height:100%;
+    max-width:100%;
     display:grid;
     grid-gap:5px;
-    grid-template-columns:repeat(auto-fill,minmax(180px, 1fr));
-    grid-template-rows: 50px;
-    grid-auto-rows:50px;
+    grid-template-columns:repeat(auto-fill,minmax(300px, 1fr));
     
+    grid-auto-rows:auto;
 `
 const Label = styled.label`
-    width: auto;
+    max-width:190px;
+    min-width:100px;
     font-size: 1.25rem; 
     align-self:center;
     margin-right:1rem;
@@ -40,29 +49,47 @@ const Label = styled.label`
 const Input = styled.input`
     background: ${theme.grisClaro};
     cursor: pointer;
+    min-width:40px;
+    max-width:150px;
     
     border-radius: 0.25rem;
     border: none;
     position: relative;
-    height: 100%; 
-    min-width: 30px;
-    max-width: 140px;
+    height: 36px; 
     padding-left:1.25rem;
-    
     font-size: 1rem; 
     transition: .5s ease all;
     &:hover {
         background: ${theme.grisClaro2};
     }
 `
+const TextArea = styled.textarea`
+    background: ${theme.grisClaro};
+    cursor: pointer;
+    border-radius: 0.25rem;
+    border: none;
+    height: 200px; 
+    min-width: 320px;
+    box-sizing:border-box;
+    padding-left:1.25rem;
+    margin-top:0.5rem;
+    padding-top:1rem;
+    position:relative;
+    font-size: 1.25rem; 
+    font-family:'Work Sans', sans-serif; 
+    transition: .5s ease all;
+    &:hover {
+        background: ${theme.grisClaro2};
+    }
+    @media(max-width:420px){
+        padding: 16px;
+    }
+`
 const InputLabel = styled.div`
     display:flex;
-    alignContent:center;
+    width:100%;
     margin:0.5rem 0;
-    &:last-child{
-        grid-column: 1;
-        grid-row: 8; 
-    }
+    box-sizing:border-box;
 `
 const Button = styled.button`
     border-radius:5px;
@@ -85,7 +112,10 @@ const INITIAL_STATE_LOTE = {
     nombreSpot:'',
     estado:'disponible',
     nombreLote:'',
-    precio:'',
+    valor:'',
+    superficie:'',
+    servidumbre:'',
+    caracteristica:'',
     fecha: new Date()
 }
 const INITIAL_STATE_ALERTA = {
@@ -103,7 +133,7 @@ const FormularioLote = ({lote}) => {
             if(lote.data().uid === user.uid){
                 setData({            
                     nombreLote: lote.data().nombreLote,
-                    precio: lote.data().precio,
+                    valor: lote.data().valor,
                     estado:lote.data().estado,
                     fecha: fromUnixTime(lote.data().fecha),
                     ...lote.data()
@@ -121,13 +151,13 @@ const FormularioLote = ({lote}) => {
     }
     const handleSubmit = event => {
         event.preventDefault()
-        const { fecha, precio, estado, nombreLote } = data 
-        const newLote = { valor: precio, estado, nombreLote, fecha: getUnixTime(fecha), uid:user.uid }
+        const { fecha, valor, estado, nombreLote, superficie, servidumbre, caracteristica } = data 
+        const newLote = { valor, estado, nombreLote, superficie, servidumbre, caracteristica, fecha: getUnixTime(fecha), uid:user.uid }
         if(lote){
             editarLote({
                 ...data,
                 id:lote.id,
-                fecha:getUnixTime(fecha)
+                fecha:getUnixTime(data.fecha)
             }).then(() => {
                 setAlerta({active: true, tipo:'exito', mensaje:'Lote actualizado' })
             }).then(() => {
@@ -145,27 +175,41 @@ const FormularioLote = ({lote}) => {
         }
     }
     return(
-        <FormContainer>
-            <Form onSubmit={handleSubmit}>
-                <InputLabel>
-                    <Label>Nombre del Lote:</Label>
-                    <Input type="text" name="nombreLote" value={data.nombreLote} onChange={handleChange} placeholder="Nombre Lote"/>
-                </InputLabel>
-                <InputLabel>
-                    <Label>Valor:</Label>
-                    <Input type="text" name="precio" value={data.precio} onChange={handleChange} placeholder="Valor"/>
-                </InputLabel>
-                <InputLabel>
-                    <Label>Estado:</Label>
-                    <SelectEstados data={data} setData={setData}/>
-                </InputLabel>
-                <InputLabel>
-                    <Button type="submit">{lote ? 'Actualizar LOTE': 'Crear Lote'}</Button>
-                </InputLabel>
-                
-            </Form>
-            <Alerta alerta={alerta} setAlerta={setAlerta}/>
-        </FormContainer>
+        <Container>
+            <FormContainer>
+                <Form onSubmit={handleSubmit}>
+                    <InputLabel>
+                        <Label>Nombre del Lote:</Label>
+                        <Input type="text" name="nombreLote" value={data.nombreLote} onChange={handleChange} placeholder="Nombre Lote"/>
+                    </InputLabel>
+                    <InputLabel>
+                        <Label>Valor:</Label>
+                        <Input type="text" name="valor" value={data.valor} onChange={handleChange} placeholder="Valor UF"/>
+                    </InputLabel>
+                    <InputLabel>
+                        <Label>Estado:</Label>
+                        <SelectEstados data={data} setData={setData}/>
+                    </InputLabel>
+                    <InputLabel>
+                        <Label>Superficie M2</Label>
+                        <Input type="text" name="superficie" value={data.superficie} onChange={handleChange} placeholder="Superficie M2"/>
+                    </InputLabel>
+                    <InputLabel>
+                        <Label>Servidumbre M2</Label>
+                        <Input type="text" name="servidumbre" value={data.servidumbre} onChange={handleChange} placeholder="Servidumbre M2"/>
+                    </InputLabel>
+                    <div>
+                        <Label>Caracteristicas</Label>
+                        <TextArea type="text" name="caracteristica" value={data.caracteristica} onChange={handleChange} placeholder="Caracteristica"/>
+                    </div>
+                    <InputLabel>
+                        <Button type="submit">{lote ? 'Actualizar': 'Crear Lote'}</Button>
+                    </InputLabel>
+                    
+                </Form>
+                <Alerta alerta={alerta} setAlerta={setAlerta}/>
+            </FormContainer>
+        </Container>
     )
 }
 export default FormularioLote

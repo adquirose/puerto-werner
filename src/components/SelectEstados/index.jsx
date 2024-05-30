@@ -28,6 +28,7 @@ const OpcionSeleccionada = styled.div`
     text-transform: capitalize;
     display: flex;
     align-items: center;
+    height:36px;
     justify-content: space-between;
     svg {
         width: 1rem;
@@ -69,7 +70,7 @@ const SelectEstados = ({ data, setData }) => {
         {id: 'disponible', texto: 'Disponible'},
         {id: 'vendido', texto: 'Vendido'},
         {id: 'reservado', texto: 'Reservado'},
-        {id: 'nodisponible', texto: 'No Disponible'},
+        {id: 'no disponible', texto: 'No Disponible'},
     ]
     const handleOnClick = (event) => {
         setData({...data, estado: event.currentTarget.dataset.valor})

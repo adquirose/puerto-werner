@@ -362,8 +362,7 @@
 
 
 		<layer name="skin_btn_disponible" handcursor="false" url="disponible.png" align="right" x="5" y="0" scale="0.35" alpha="1" visible="true" onclick=""/>
-		<layer name="skin_btn_reservado" handcursor="false" url="reservado.png" align="right" x="90" y="0" scale="0.35" alpha="1" visible="true" onclick=""/>
-		<layer name="skin_btn_vendido" handcursor="false" url="vendido.png" align="right" x="175" y="0" scale="0.35" alpha="1" visible="true" onclick=""/>
+		<layer name="skin_btn_vendido" handcursor="false" url="vendido.png" align="right" x="100" y="0" scale="0.35" alpha="1" visible="true" onclick=""/>
 			</layer>
 
 		<layer name="skin_loadingtext" type="text" align="center" x="5" y="-5" html="get:skin_settings.loadingtext" visible="false" bg="false" enabled="false" css="calc:skin_settings.design_text_css + ' text-align:center; font-style:italic; font-size:22px;'" textshadow="get:skin_settings.design_text_shadow" />

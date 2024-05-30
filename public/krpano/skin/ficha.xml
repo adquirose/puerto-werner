@@ -45,11 +45,11 @@
 		    set(layer[sidebar].height,get(sidebar_height)); 
 		    add(sidebar_width,width_ficha,0); 
 		    set(layer[sidebar].width,get(sidebar_width)); 
-		);  --> set(layer[btn-continuar].onclick,continuar()); set(link,%3); set(lote,%4); def(ruta,string,'https://wa.me/5699999999/?text=Puerto Werner: Hola, estoy interesado en el sitio ');
+		);  --> set(layer[btn-continuar].onclick,continuar()); set(link,%3); set(lote,%4); def(ruta,string,'https://wa.me/56978248529/?text=Puerto Werner: Hola, estoy interesado en el sitio ');
 		txtadd(link_ws,get(ruta),get(lote));
 
 		if(%2 == 'plano', 
-			set(layer[btn-extra].html,'Ver Plano');
+			set(layer[btn-extra].html,'Ver Brochure');
 			set(layer[btn-extra].onclick,openurl(get(link)));
 		);
 		if(%2 == 'web',

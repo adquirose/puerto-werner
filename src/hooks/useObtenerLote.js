@@ -9,7 +9,7 @@ const useObtenerLote = (id) => {
 
     useEffect(() => {
         const obtenerLote = async () => {
-            const documento = await getDoc(doc(db,'lotes', id))
+            const documento = await getDoc(doc(db,'proyectos/puerto-werner/lotes', id))
             if(documento.exists){
                 setLote(documento)
             }else{

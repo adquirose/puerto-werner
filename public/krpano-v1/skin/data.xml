@@ -1,0 +1,927 @@
+<krpano>
+	
+
+ 
+
+	<data name="ficha1">
+
+	<h2>Parcela 1</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.:  5.866 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.170 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Ubicada en altura, lo que permite una excelente vista a Volcanes Osorno, Puntiagudo y Calbuco. Además de una vista panorámica a todo el loteo desde su acceso principal. Terreno despejado, colinda con camino interno y el Público. 
+	</p>
+	</data>
+
+	<data name="ficha2">
+
+	<h2>Parcela 2</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.513 m2
+	<br/>
+	<br/>
+	Servidumbre: 411 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Ubicada en altura, lo que permite una excelente vista a Volcanes Osorno, Puntiagudo y Calbuco. Además de una vista panorámica a todo el loteo desde su acceso principal. Terreno despejado, ubicada en altura con suave pendiente.
+	</p>
+	</data>
+
+	<data name="ficha3">
+
+	<h2>Parcela 3</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.016 m2
+	<br/>
+	<br/>
+	Servidumbre: 399 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Ubicada en altura, lo que permite una excelente vista a Volcanes Osorno, Puntiagudo y Calbuco. Se aprecia parte de la PichiLaguna y parcialmente el lago Llanquihue a lo lejos. Terreno despejado y pendiente suave.
+	</p>
+	</data>
+
+	<data name="ficha4">
+
+	<h2>Parcela 4</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.128 m2
+	<br/>
+	<br/>
+	Servidumbre: 398 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Vista a Volcanes Osorno y Calbuco. Además de una vista panorámica a todo el loteo y Pichilaguna. Terreno despejado, suave pendiente protegida del viento.
+	</p>
+	</data>
+
+	<data name="ficha5">
+
+	<h2>Parcela 5</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.000 m2
+	<br/>
+	<br/>
+	Servidumbre: 388 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Vista a Volcanes Osorno y Calbuco. Además de una vista màs amplia a la Pichi Laguna. Terreno despejado, colinda con Club Náutico. Pendiente baja.
+	</p>
+	</data>
+
+	<data name="ficha6">
+
+	<h2>Parcela 6</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 6.355 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.258 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Gran Vista panoràmica a Volcanes Osorno, Puntiagudo y Calbuco. Vista a lago Llanquihue y en su totalidad a todo el loteo. Además de una vista màs amplia a la Pichi Laguna. Terreno en altura y despejado, colinda con camino interno y con el camino pùblico.
+	</p>
+	</data>
+
+	<data name="ficha7">
+
+	<h2>Parcela 7</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.173 m2
+	<br/>
+	<br/>
+	Servidumbre: 378 m2
+	<br/>
+	<br/>
+	Valor:
+	<br/>
+	<br/>
+	Caracteristicas: Gran Vista panoràmica a Volcanes Osorno, Puntiagudo y Calbuco. Vista a lago Llanquihue y en su totalidad a todo el loteo. Además de una vista màs amplia a la Pichi Laguna. Terreno en altura, pendiente pronunciada y despejado, colinda con camino interno.
+	</p>
+	</data>
+
+	<data name="ficha8">
+
+	<h2>Parcela 8</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.027 m2
+	<br/>
+	<br/>
+	Servidumbre: 367 m2
+	<br/>
+	<br/>
+	Valor:
+	<br/>
+	<br/>
+	Caracteristicas: Gran Vista panoràmica a Volcanes Osorno, Puntiagudo y Calbuco donde se aprecia todo el loteo. Además de una vista màs amplia a la Pichi Laguna. Terreno despejado en altura con gran pendiente.
+	</p>
+	</data>
+
+	<data name="ficha9">
+
+	<h2>Parcela 9</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.136 m2
+	<br/>
+	<br/>
+	Servidumbre: 372 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Vista a Volcanes Osorno y Calbuco, ademàs a huerto vecino de Berries. Posee una vista màs amplia a la Pichi Laguna. Terreno en planicie y despejado.
+	</p>
+	</data>
+
+	<data name="ficha10">
+
+	<h2>Parcela 10</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.108 m2
+	<br/>
+	<br/>
+	Servidumbre: 390 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Vista a Volcanes Osorno y Calbuco, ademàs a huerto vecino de Berries. Posee una vista màs amplia a la Pichi Laguna. Terreno en planicie y despejado.
+
+	</p>
+	</data>
+
+	<data name="ficha11">
+	<h2>Parcela 11</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.723 m2
+	<br/>
+	<br/>
+	Servidumbre: 271 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Vista a Volcanes Osorno y Calbuco, ademàs a huerto vecino de Berries. Posee una vista màs amplia a la Pichi Laguna. Terreno en planicie y despejado.
+	</p>
+	</data>
+
+	<data name="ficha12">
+
+	<h2>Parcela 12</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.387 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.114 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Ubicada en esquina,Preciosa vista delantera hacia la laguna, posterior amplia vista al loteo y sus lomajes.
+	</p>
+	</data>
+
+	<data name="ficha13">
+
+	<h2>Parcela 13</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.084 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.070m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Ubicada en esquina,Preciosa vista delantera hacia la laguna, posterior amplia vista al loteo y sus lomajes. Terreno plano.
+	</p>
+	</data>
+
+	<data name="ficha14">
+
+	<h2>Parcela 14</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.324 m2
+	<br/>
+	<br/>
+	Servidumbre: 432 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas:Preciosa vista delantera hacia la laguna, posterior amplia vista al loteo y sus lomajes. Terreno plano. 
+	</p>
+	</data>
+
+	<data name="ficha15">
+
+	<h2>Parcela 15</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.000 m2
+	<br/>
+	<br/>
+	Servidumbre: 660 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Preciosa vista delantera hacia la laguna, posterior amplia vista al loteo y sus lomajes. Terreno plano.
+	</p>
+	</data>
+
+	<data name="ficha16">
+
+	<h2>Parcela 16</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.320 m2
+	<br/>
+	<br/>
+	Servidumbre: 479 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Preciosa vista delantera hacia la laguna, posterior amplia vista al loteo y sus lomajes. Terreno plano.
+	</p>
+	</data>
+
+	<data name="ficha17">
+
+	<h2>Parcela 17</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.029 m2
+	<br/>
+	<br/>
+	Servidumbre: 672 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Amplia vista delantera hacia la laguna, posterior vista al loteo y sus lomajes. Terreno plano.
+	</p>
+	</data>
+
+	<data name="ficha18">
+
+	<h2>Parcela 18</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.425 m2
+	<br/>
+	<br/>
+	Servidumbre: 600 m2
+	<br/>
+	<br/>
+	Valor:
+	<br/>
+	<br/>
+	Caracteristicas: Completa vista a la laguna en terreno plano y despejado.
+	</p>
+	</data>
+
+	<data name="ficha19">
+
+	<h2>Parcela 19</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.59 m2
+	<br/>
+	<br/>
+	Servidumbre: 595 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Vista privilegiada a la Laguna, posee un árbol antiguo, en terreno con suave nivel.
+	</p>
+	</data>
+
+	<data name="ficha20">
+
+	<h2>Parcela 20</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.136 m2
+	<br/>
+	<br/>
+	Servidumbre: 619 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Amplia vista a la laguna , ubicada en mediana altura que permite ver gran parte del loteo.
+	</p>
+	</data>
+
+	<data name="ficha21">
+	<h2>Parcela 21</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.705 m2
+	<br/>
+	<br/>
+	Servidumbre: 619 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas:
+	</p>
+	</data>
+
+	<data name="ficha22">
+
+	<h2>Parcela 22</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.289 m2
+	<br/>
+	<br/>
+	Servidumbre: 410 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Preciosa y amplia vista a la laguna, en terreno con nivel de altura que permite ver gran parte del loteo.
+	</p>
+	</data>
+
+	<data name="ficha23">
+
+	<h2>Parcela 23</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.382 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.174 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas:
+	</p>
+	</data>
+
+	<data name="ficha24">
+
+	<h2>Parcela 24</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.379 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.48 m2
+	<br/>
+	<br/>
+	Valor:
+	<br/>
+	<br/>
+	Caracteristicas: Ubicada en esquina y altura, lo que permite una amplia vista a Laguna y Volcanes.
+	</p>
+	</data>
+
+	<data name="ficha25">
+
+	<h2>Parcela 25</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.058 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.099 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Parcela en esquina, vista completa a Pichilaguna, terreno libre y parejo. Vista a Volcán Osorno y Calbuco. 
+	</p>
+	</data>
+
+	<data name="ficha26">
+
+	<h2>Parcela 26</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.021 m2
+	<br/>
+	<br/>
+	Servidumbre: 377 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Vista completa a Pichilaguna, terreno libre y parejo. Vista a Volcán Osorno y Calbuco.
+	</p>
+	</data>
+
+	<data name="ficha27">
+
+	<h2>Parcela 27</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.158 m2
+	<br/>
+	<br/>
+	Servidumbre: 123 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Hermosa vista a la Laguna, terreno libre y con suaves desniveles. Colinda con Huerto de Berries. 
+	</p>
+	</data>
+
+	<data name="ficha28">
+
+	<h2>Parcela 28</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.240 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.128 m2
+	<br/>
+	<br/>
+	Valor: 3.900 UF
+	<br/>
+	<br/>
+	Caracteristicas: Parcela en esquina, vista completa a Pichilaguna y gran parte del loteo. Terreno libre y parejo. 
+	</p>
+	</data>
+
+	<data name="ficha29">
+
+	<h2>Parcela 29</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.072 m2
+	<br/>
+	<br/>
+	Servidumbre: 391 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Linda vista a Laguna y gran parte del loteo. Terreno que va ganado Altura lo que permite ver Volcán Osorno y Puntiagudo. 
+	</p>
+	</data>
+
+	<data name="ficha30">
+
+	<h2>Parcela 30</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.025 m2
+	<br/>
+	<br/>
+	Servidumbre: 219 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Maravillosa vista a la Laguna, terreno despejado y buena altura. Vista superiro a Volcanes Osorno y Calbuco. Colinda con Fundo vecino. 
+	</p>
+	</data>
+
+	<data name="ficha31">
+	<h2>Parcela 31</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.024 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.127 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Vista completa a la laguna, ubicada en esquina en terreno con suave desnivel y despejado. Vista posterior hacia Volcán Osorno.
+	</p>
+	</data>
+
+	<data name="ficha32">
+
+	<h2>Parcela 32</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.024 m2
+	<br/>
+	<br/>
+	Servidumbre: 389 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Vista a la laguna, en terreno con suave desnivel y despejado.
+	</p>
+	</data>
+
+	<data name="ficha33">
+
+	<h2>Parcela 33</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.024 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.127 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Hermosa vista completa a la laguna y loteo. Ubicada en terreno en altura y despejado. Visibilidad  posterior hacia volcanes Osorno y Calbuco.
+	</p>
+	</data>
+
+	<data name="ficha34">
+
+	<h2>Parcela 34</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.022 m2
+	<br/>
+	<br/>
+	Servidumbre: 418 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Vista a laguna y parcialmente al resto del loteo. Terreno con pendiente suave y posee un sector de altura que permite ver Volcan Osorno y Calbuco. Con hermoso árbol antiguo.
+	</p>
+	</data>
+
+	<data name="ficha35">
+
+	<h2>Parcela 35</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.001 m2
+	<br/>
+	<br/>
+	Servidumbre: 1.124 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Hermosa vista en altura a laguna, ubicada en esquina en terreno alto con desniveles y despejado. Vistas muy amplias. Posee gran árbol antiguo.
+	</p>
+	</data>
+
+	<data name="ficha36">
+
+	<h2>Parcela 36</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.064 m2
+	<br/>
+	<br/>
+	Servidumbre: 89 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Terreno en Altura. Muchas y pequeñas lomas que permiten ver la Laguna, loteo y Volcanes. 
+	</p>
+	</data>
+
+	<data name="ficha37">
+
+	<h2>Parcela 37</h2>
+	<p>
+	Estado: Disponible
+	<br/>
+	<br/>
+	Superficie aprox.: 5.868 m2
+	<br/>
+	<br/>
+	Servidumbre: 128 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Parcela con bellas y variadas alturas, colinda con fundo vecino y la visión a todos los campos es muy amplia. Terreno despejado.
+	</p>
+	</data>
+
+	<data name="ficha38">
+
+	<h2>Parcela 38</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 6.558 m2
+	<br/>
+	<br/>
+	Servidumbre: 476 m2
+	<br/>
+	<br/>
+	Valor:
+	<br/>
+	<br/>
+	Caracteristicas: Parcela con vista total a resto del loteo, ubicada a muy buena altura, terreno despejado.
+	</p>
+	</data>
+
+	<data name="ficha39">
+
+	<h2>Parcela 39</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	Superficie aprox.: 5.024 m2
+	<br/>
+	<br/>
+	Servidumbre: 404 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Parcela con vista total a resto del loteo, ubicada a muy buena altura, terreno despejado. Vista a Laguna y se divisan los conos de los volcanes Osorno y Calbuco.
+	</p>
+	</data>
+
+	<data name="ficha40">
+
+	<h2>Parcela 40</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5558,85 m2
+	<br/>
+	<br/>
+	Servidumbre: 412,90 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Parcela con vista total a resto del loteo, ubicada a muy buena altura, terreno despejado. Vista a Laguna y se divisan los conos de los volcanes Osorno y Calbuco.Tiene un hermoso y muy antiguo árbol de gran tamaño.
+	</p>
+	</data>
+
+	<data name="ficha41">
+
+	<h2>Parcela 41</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 6.464 m2
+	<br/>
+	<br/>
+	Servidumbre: 449 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Parcela con vista total a resto del loteo y Laguna. Ubicada a muy buena altura, terreno despejado.Vista a los conos de los volcanes Osorno y Calbuco. Tiene un hermoso y muy antiguo árbol de tamaño mediano.
+	</p>
+	</data>
+
+	<data name="ficha42">
+
+	<h2>Parcela 42</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.001 m2
+	<br/>
+	<br/>
+	Servidumbre: 292 m2
+	<br/>
+	<br/>
+	Valor:
+	<br/>
+	<br/>
+	Caracteristicas: Parcela ubicada frente al Parque, vista privilegiada al total de la laguna. Terreno plano y despejado.
+	</p>
+	</data>
+
+	<data name="ficha43">
+
+	<h2>Parcela 43</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.000 m2
+	<br/>
+	<br/>
+	Servidumbre: 462 m2
+	<br/>
+	<br/>
+	Valor: 
+	<br/>
+	<br/>
+	Caracteristicas: Parcela ubicada frente al Parque, vista privilegiada al total de la laguna. Terreno plano y despejado.
+	</p>
+	</data>
+
+	<data name="ficha46">
+
+	<h2>Parcela 436</h2>
+	<p>
+	Estado: Vendida
+	<br/>
+	<br/>
+	Superficie aprox.: 5.000 m2
+	<br/>
+	<br/>
+	</p>
+	</data>
+
+		<data name="txt_pichilaguna">
+
+	<h2>Pichi Laguna</h2>
+	<p>
+	Siendo esta laguna llenada por vertientes subterráneas, con un desagüe natural en su lado poniente, nos garantiza una muy buena calidad en sus aguas.
+Dotada de una gran diversidad de aves, tales como Gaviotas, Garzas, Hualas, Martin Pescador, Siete Colores, entre varios otras.
+Patos de cuatro especies distintas que conviven en maravillosa sintonía con el resto de las aves en la Laguna.
+Sus suaves vientos y ausencia de olas otorgan un excelente ambiente para la navegación óptima todo el año, además de ser templada en verano (21°C )hacen de ella una excelente laguna para disfrutar y nadar tranquilamente.
+También es única en las fabulosas vistas a los volcanes desde cualquier lugar de la laguna, Volcán Osorno, Puntiagudo y Calbuco. Convirtiéndola en unos de los lugares más bellos de la Patagonia chilena.
+	</p>
+	</data>
+
+	<data name="txt_clubnautico">
+
+	<h2>Club Nautico</h2>
+	<p> 
+Los propietarios que adquieran una parcela en Puerto Werner, tendrán el privilegio de formar parte de este club sin costo de incorporación para ellos. 
+	</p>
+	</data>
+
+	<data name="txt_galeria">
+
+	<h2>Club Nautico</h2>
+	<p>
+	Entregado en usufructo por el dueño del loteo para el desarrollo de actividades náuticas como remo, velerismo, kayak etc. 
+Los propietarios que adquieran una parcela en Puerto Werner, tendrán el privilegio de formar parte de este club sin costo de incorporación para ellos. 
+	</p>
+	</data>
+
+	<data name="txt_mirador">
+
+	<h2>Mirador</h2>
+	<p>
+	El Mirador en Borde costero de Pichilaguna, permite apreciar en su totalidad el magnífico paisaje y la vida silvestre que lo rodea en cualquier momento o condición climática.
+	</p>
+	</data>
+
+	<data name="txt_parque">
+
+	<h2>Parque</h2>
+	<p>
+	Hemos creado este bello Parque para que los residentes lo usen, cuiden y disfruten. Los "Espejos de Agua" que tiene el parque, limpian las aguas del loteo a través de una red de canales y biofiltros para devolverlas limpias a la laguna, buscando con ello conservar el borde costero como reserva natural para las cientos de aves que habitan en ella. 
+Esperamos que la comunidad de Puerto Werner lo disfrute plenamente, cuidando el entorno y respetando las simples normas de conservación y uso del lugar para un bien común.
+	</p>
+	</data>
+
+
+	
+
+
+
+</krpano>

@@ -1,5 +1,5 @@
 import IconoCerrarSesion from './../../assets/imagenes/log-out.svg?react'
-import Boton from '../../elements/Button'
+import Button from '../../elements/Button'
 import { auth } from '../../firebase/firebaseConfig'
 import { signOut } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
@@ -15,9 +15,9 @@ const BotonCerrarSesion = () => {
         }
     }
     return(
-        <Boton $iconoGrande as="button" onClick={cerrarSesion}>
+        <Button onClick={cerrarSesion}>
             <IconoCerrarSesion/>
-        </Boton>
+        </Button>
     )
 }
 export default BotonCerrarSesion

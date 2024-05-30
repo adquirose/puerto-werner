@@ -1,4 +1,5 @@
 <krpano>
+    <events onnewscene="jscall(calc('reactKrpano.nameScene(`' + get(xml.scene) + '`)'))" />
     <!-- /Spots del tour Virtual-->
    <style name="hs_pro_disponible"
         scale="0.5"
@@ -77,6 +78,7 @@
         );
     </action>
     <action name="crear_hs">
+        set(nombreSpot,%1);
         addhotspot(%1);
         set(hotspot[%1].ath,%2);
         set(hotspot[%1].atv,%3);
@@ -84,9 +86,10 @@
             %4 == disponible, hotspot[%1].loadstyle(hs_pro_disponible),
             %4 == vendido, hotspot[%1].loadstyle(hs_pro_vendido),
             %4 == reservado, hotspot[%1].loadstyle(hs_pro_reservado),
+            %4 == nodisponible, hotspot[%1].loadstyle(hs_pro_nodisponible),
         );
         
         set(hotspot[%1].html,%5);
-        set(hotspot[%1].onclick,mostrar_ficha(%1,plano,skin/plano.pdf,%5));
+        set(hotspot[%1].onclick,jscall(calc('reactKrpano.mostrarFicha(`' + hotspot[get(name)].name + '`)')));
     </action>
 </krpano>

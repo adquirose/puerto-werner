@@ -1,0 +1,51 @@
+<krpano>
+    <spot name="ficha1" estado="disponible" html="1" ath="-17.290" atv="34.042"/>
+    <spot name="ficha2" estado="vendido" html="2" ath="-21.393" atv="38.850"/>
+    <spot name="ficha3" estado="vendido" html="3" ath="-28.193" atv="43.700"/>
+    <spot name="ficha4" estado="disponible" html="4" ath="-37.989" atv="49.489"/>
+    <spot name="ficha5" estado="disponible" html="5" ath="-51.663" atv="55.127"/>
+    <spot name="ficha6" estado="vendido" html="6" ath="-3.188" atv="37.682"/>
+    <spot name="ficha7" estado="vendido" html="7" ath="7.419" atv="38.826"/>
+    <spot name="ficha8" estado="vendido" html="8" ath="17.700" atv="39.142"/>
+    <spot name="ficha9" estado="disponible" html="9" ath="27.243" atv="38.597"/>
+    <spot name="ficha10" estado="disponible" html="10" ath="37.086" atv="37.184"/>
+    <spot name="ficha11" estado="disponible" html="11" ath="45.490" atv="35.335"/>
+    <spot name="ficha12" estado="disponible" html="12" ath="-6.558" atv="49.789"/>
+    <spot name="ficha13" estado="vendido" html="13" ath="14.374" atv="51.092"/>
+    <spot name="ficha14" estado="disponible" html="14" ath="-10.016" atv="60.271"/>
+    <spot name="ficha15" estado="disponible" html="15" ath="21.150" atv="64.664"/>
+    <spot name="ficha16" estado="disponible" html="16" ath="-24.721" atv="70.694"/>
+    <spot name="ficha17" estado="vendido" html="17" ath="51.477" atv="84.095"/>
+    <spot name="ficha18" estado="vendido" html="18" ath="-70.857" atv="77.903"/>
+    <spot name="ficha19" estado="vendido" html="19" ath="-116.447" atv="73.233"/>
+    <spot name="ficha20" estado="vendido" html="20" ath="175.635" atv="73.420"/>
+    <spot name="ficha21" estado="vendido" html="21" ath="-132.014" atv="64.850"/>
+    <spot name="ficha22" estado="vendido" html="22" ath="-144.622" atv="57.131"/>
+    <spot name="ficha23" estado="vendido" html="23" ath="-153.790" atv="50.324"/>
+    <spot name="ficha24" estado="vendido" html="24" ath="-177.498" atv="56.722"/>
+    <spot name="ficha25" estado="vendido" html="25" ath="37.555" atv="51.385"/>
+    <spot name="ficha26" estado="disponible" html="26" ath="49.440" atv="47.485"/>
+    <spot name="ficha27" estado="disponible" html="27" ath="58.466" atv="42.628"/>
+    <spot name="ficha28" estado="disponible" html="28" ath="58.080" atv="65.045"/>
+    <spot name="ficha29" estado="vendido" html="29" ath="71.435" atv="57.021"/>
+    <spot name="ficha30" estado="vendido" html="30" ath="78.702" atv="49.342"/>
+    <spot name="ficha31" estado="vendido" html="31" ath="124.519" atv="69.755"/>
+    <spot name="ficha32" estado="vendido" html="32" ath="115.640" atv="60.224"/>
+    <spot name="ficha33" estado="vendido" html="33" ath="112.065" atv="51.241"/>
+    <spot name="ficha34" estado="vendido" html="34" ath="149.165" atv="57.251"/>
+    <spot name="ficha35" estado="vendido" html="35" ath="158.138" atv="50.299"/>
+    <spot name="ficha36" estado="vendido" html="36" ath="139.376" atv="46.286"/>
+    <spot name="ficha37" estado="disponible" html="37" ath="155.955" atv="37.113"/>
+    <spot name="ficha38" estado="vendido" html="38" ath="165.523" atv="39.185"/>
+    <spot name="ficha39" estado="vendido" html="39" ath="177.441" atv="41.063"/>
+    <spot name="ficha40" estado="vendido" html="40" ath="-170.521" atv="41.608"/>
+    <spot name="ficha41" estado="vendido" html="41" ath="-156.977" atv="40.064"/>
+    <spot name="ficha42" estado="vendido" html="42" ath="-134.302" atv="43.528"/>
+    <spot name="ficha43" estado="vendido" html="43" ath="-121.963" atv="47.098"/>
+    <spot name="ficha44" estado="vendido" html="44" ath="-80.276" atv="32.614"/>
+    <spot name="ficha45" estado="vendido" html="45" ath="-143.264" atv="37.003"/>
+    <spot name="ficha46" estado="vendido" html="46" ath="-130.916" atv="34.606"/>
+
+
+
+</krpano>

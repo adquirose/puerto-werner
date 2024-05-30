@@ -6,18 +6,22 @@ const useObtenerLotes = () => {
     const [lotes, setLotes] = useState([])
 
     const fetchData = async() => {
-        const querySnapshot = await getDocs(collection(db, "lotes"))
+        const querySnapshot = await getDocs(collection(db, "proyectos","puerto-werner", "lotes"))
         querySnapshot.forEach((doc) => {
             const newLote = {
                 id:doc.id,
                 ...doc.data()
             }
             setLotes( oldArray => [...oldArray, newLote])
-          });
+        });
     }
     useEffect(()=> {
         fetchData()
     },[])
+    
+    useEffect(() => {
+        console.log(lotes)
+    },[lotes])
 
     // useEffect(() => {
     //     const consulta = query(

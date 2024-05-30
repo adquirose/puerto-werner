@@ -1,122 +1,87 @@
 import useObtenerLotes from "../../hooks/useObtenerLotes"
 import styled from "styled-components"
 import IconoFlecha from '../../assets/imagenes/flecha.svg?react';
-import Boton from '../../elements/Button'
 import { Link, useNavigate } from "react-router-dom"
 import IconoEditar from '../../assets/imagenes/editar.svg?react'
-import IconoBorrar from '../../assets/imagenes/borrar.svg?react'
-import borrarGasto from '../../firebase/borrarGasto'
-import convertirAMoneda from "../../functions/convertirAMoneda"
+// import IconoBorrar from '../../assets/imagenes/borrar.svg?react'
+// import borrarLote from '../../firebase/borrarLote'
+// import convertirAMoneda from "../../functions/convertirAMoneda"
 import theme from "../../constants";
 import BotonCerrarSesion from "../BotonCerrarSesion";
+import Button from "../../elements/Button";
 
+const Container = styled.div`
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+`
+const Header = styled.div`
+    position:fixed;
+    z-index:20;
+    background:white;
+    width:100%;
+    height:60px;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;   
+`
+const ContainerTitulo = styled.div`
+    display: grid;
+    grid-template-columns: minmax(30px,1fr) minmax(100px,1fr) minmax(100px,1fr) minmax(90px,1fr);
+    position:fixed;
+    z-index:20;
+    background:white;
+    min-width:360px;
+    max-width:720px;
+    width:100%;
+    height:60px;
+    top:60px;
+`
 const Lista = styled.ul`
     min-width:360px;
     max-width:720px;
-    grid-area:content;
-    justify-self:center;
+    width:100%;
     list-style: none;
-    padding: 0 2rem;
-    height: 100%;
-    overflow-y: auto;
+    padding-top:120px !important;
+    padding-left:0;
+    overflow-y:auto;
+    margin:0;
     @media(max-width: 380px){
         padding: 0;
     }
 `;
-const ElementoLista = styled.li`
-    position:${props => props.$position ? props.$position : 'relative'};
+const Item = styled.li`
+    position:relative;
     background:white;
-    z-index:${props => props.$zIndex ? props.$zIndex : '1'};
+    z-index:1;
     padding: 1rem 0;
     border-bottom: 2px solid #F2F2F2;
     display: grid;
     grid-template-columns: minmax(30px,1fr) minmax(100px,1fr) minmax(100px,1fr) minmax(90px,1fr);
     gap: 5px;
-    & > div {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content:start;
-    }
- 
     &:hover button,
     &:hover a {
         opacity: 1;
     }
     
 `;
-const Header = styled.div`
-    grid-area:header;
-    position:fixed;
-    z-index:20;
-    background:white;
-    width:100%;
-    height:60px;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    
-`
-const Button = styled.button`
-    display: block;
-    width: 3.12rem; /* 50px */
-    height: 3.12rem; /* 50px */
-    line-height: 3.12rem; /* 50px */
-    text-align: center;
-    margin-right: 1.25rem; /* 20px */
-    border: none;
-    background: #000;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.31rem; /* 5px */
-    cursor: pointer;
-
-    @media(max-width: 60rem){ /* 950px */
-        width: 2.5rem; /* 40px */
-        height: 2.5rem; /* 40px */
-        line-height: 2.5rem; /* 40px */
-    }
-`
 const Icono = styled(IconoFlecha)`
     width: 50%;
     height: auto;
     fill: #fff;
 `;
-const Descripcion = styled.div`
-    justify-content: center;
+const Span = styled.span`
     font-size: 1.25rem;
     text-transform: capitalize;
-    @media (max-width: 50rem) { /* 50px */
-        justify-content: end;
-    }
+    width: 100%;
+    text-align:center;
+    line-height:2;
 `;
- 
-const Valor = styled.div`
-    font-size: 1.25rem; /* 20px */
-    font-weight: 700;
-    justify-content: end;
- 
-    @media (max-width: 50rem) { /* 80px */
-        justify-content: start;
-    }
-`;
- 
-// const Fecha = styled.div`
-//     border-radius: 0.31rem; /* 5px */
-//     background: ${theme.azulClaro};
-//     text-align: center;
-//     color: #fff;
-//     padding: 0.62rem 3.12rem; /* 10px 50px */
-//     display: inline-block;
-//     margin: 1.25rem 0; /* 20px */
- 
-//     @media (max-width: 50rem) { /* 80px */
-//         width: 100%;
-//     }
-// `;
- 
+  
 const ContenedorBotones = styled.div`
+    display:flex;
+    justify-content:center;
     @media (max-width: 50rem) { /* 80px */
         justify-content: end;
     }
@@ -138,7 +103,7 @@ const BotonAccion = styled.button`
     display: flex;
     align-items: center;
     justify-content: center;
-    opacity: 0;
+    opacity: 1;
  
     &:hover {
         background: ${theme.grisClaro2};
@@ -147,10 +112,7 @@ const BotonAccion = styled.button`
     svg {
         width: 1.125rem; /* 18px */
     }
- 
-    @media (max-width: 50rem) { /* 80px */
-        opacity: 1;
-    }
+
 `;
  
 const ContenedorSubtitulo = styled.div`
@@ -173,58 +135,51 @@ const ListaDeLotes = () => {
     const lotes = useObtenerLotes()
     const navigate = useNavigate()
     return(
-        <>
-        <Header>
-            <Button onClick={({ruta="/home"}) => navigate(ruta)}>
-                <Icono/>
-            </Button>
-            <span>
-                Nav
-            </span>
-            <span>Buscador</span>
-            <BotonCerrarSesion/> 
-        </Header>
-        <Lista>
-            <ElementoLista $position="fixed" $zIndex="65">
-                <Descripcion>ID</Descripcion>
-                <Descripcion>Estado</Descripcion>
-                <Descripcion>Valor</Descripcion>
-            </ElementoLista>
-            {lotes.map((lote) => {
-                return(
-                    <div key={lote.id}>
-                        <ElementoLista key={lote.id}>
-                            <Descripcion>
+        <Container>
+            <Header>
+                <Button onClick={({ruta="/"}) => navigate(ruta)}>
+                    <Icono/>
+                </Button>
+                <BotonCerrarSesion/> 
+            </Header>
+            <ContainerTitulo>
+                    <Span>Lote</Span>
+                    <Span>Estado</Span>
+                    <Span>Valor UF</Span>
+                    <Span>Editar</Span>
+            </ContainerTitulo>
+            <Lista>
+                {lotes.map((lote) => {
+                    return(
+                        <Item key={lote.id}>
+                            <Span>
                                 {lote.nombreLote}
-                            </Descripcion>
-                            <Descripcion>
+                            </Span>
+                            <Span>
                                 {lote.estado}
-                            </Descripcion>
-                            <Valor>
-                                {convertirAMoneda(Number(lote.precio))}
-                            </Valor>
-                            
+                            </Span>
+                            <Span>
+                            {Number(lote.valor)}
+                            </Span>
                             <ContenedorBotones>
                                 <BotonAccion to={`/edit/${lote.id}`} as={Link}><IconoEditar/></BotonAccion>
-                                <BotonAccion onClick={() => borrarGasto(lote.id)}>
+                                {/* <BotonAccion onClick={() => borrarLote(lote.id)}>
                                     <IconoBorrar/>
-                                </BotonAccion>
+                                </BotonAccion> */}
                             </ContenedorBotones>
-                        </ElementoLista>
-                    </div>
-                )
-            })}
-            
-            {lotes.length === 0 && 
-                <ContenedorSubtitulo>
-                    <Subtitulo>No hay lotes por mostrar</Subtitulo>
-                    <Boton as={Link} to="/home">
-                        Agregar Lote
-                    </Boton>
-                </ContenedorSubtitulo>
-            }
+                        </Item>
+                    
+                    )
+                })}
+                
+                {lotes.length === 0 && 
+                    <ContenedorSubtitulo>
+                        <Subtitulo>Cargando...</Subtitulo>
+                        
+                    </ContenedorSubtitulo>
+                }
             </Lista>
-        </>
+        </Container>
     )
 }
 export default ListaDeLotes

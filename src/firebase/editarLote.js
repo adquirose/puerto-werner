@@ -1,16 +1,11 @@
 import { db } from "./firebaseConfig";
 import { doc, updateDoc } from 'firebase/firestore'
 
-const editarLote = async({id, ath, atv, nombreLote, nombreSpot, estado, precio, fecha}) => {
-    const documento = doc(db,'lotes', id)
+const editarLote = async({...data}) => {
+    const documento = doc(db,'proyectos/puerto-werner/lotes', data.id)
     return await updateDoc(documento, {
-        ath: ath,
-		atv: atv,
-        nombreLote: nombreLote,
-        nombreSpot: nombreSpot,
-        estado: estado,
-		precio: Number(precio),
-		fecha: fecha
+        ...data,
+		valor: Number(data.valor)
     })
 }
 export default editarLote
