@@ -5,6 +5,7 @@ import { ProyectoContainer } from "../Proyecto";
 import Alerta from "../Alerta";
 import styled from "styled-components";
 import theme from "../../constants";
+import { MobileContact } from '../Icons'
 
 const INITIAL_STATE = {
     nombre:'',
@@ -147,6 +148,10 @@ const Contacto = () => {
                         <Button disabled={isDisabled} type="submit"> {isLoading ? 'Enviando...' : 'Enviar'}</Button>
                     </InputLabel>
                 </Form>
+                <div onClick={() => window.open('tel:+56978248529')} style={{display:'flex', alignItems:'center', cursor:'pointer'}}>
+                    <MobileContact width="42" height="42" strokewidth="2"/>
+                    +569 7824 8529
+                </div>
             </ProyectoContainer>
             <Alerta alerta={alerta} setAlerta={setAlerta}/> 
         </>
