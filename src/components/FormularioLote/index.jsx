@@ -135,7 +135,7 @@ const FormularioLote = ({lote}) => {
     
     useEffect(() => {
         if(lote){
-            if(lote.data().uid === user.uid){
+            if(user.uid){
                 setData({            
                     nombreLote: lote.data().nombreLote,
                     valor: lote.data().valor,
