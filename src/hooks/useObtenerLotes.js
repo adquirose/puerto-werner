@@ -19,9 +19,7 @@ const useObtenerLotes = () => {
         fetchData()
     },[])
     
-    useEffect(() => {
-        console.log(lotes)
-    },[lotes])
+   
 
     // useEffect(() => {
     //     const consulta = query(
