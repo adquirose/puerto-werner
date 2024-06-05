@@ -12,7 +12,7 @@
 		<layer name="arrow_left_gallery"  align="left"  x="10" keep="true" visible="true" zorder="12" onclick="move_image(left)" url="img/arrow_left.png"  />
 		<layer name="arrow_right_gallery" align="right" x="10" keep="true" visible="true" zorder="12" onclick="move_image(right)" url="img/arrow_right.png" />
 		<layer name="gallery_close" visible="true" zorder="13" align="righttop" x="20" y="20" keep="true" onclick="hide_gallery();" url="img/close.png" />
-		<layer name="title_galeria" type="text" visible="true" zorder="15" align="bottom" x="10" y="50" keep="true" css="color:#000000; font-family:arial; font-weight:normal; font-size:21px; text-align:center;"/>
+		<layer name="title_galeria" type="text" visible="true" zorder="15" align="bottom" x="10" y="50" keep="true" bgalpha="0" css="color:#FFFFFF; font-family:arial; font-weight:normal; font-size:21px; text-align:center;"/>
 	</layer>
 	
 	<data name="css_texto">

@@ -87,7 +87,7 @@
 		<hotspot name="spot2" handcursor="true" scale="0.4" zorder="50" edge="bottom" align="bottom" alpha="1" style="hs_gallery" galleryname="laguna" title_gallery="Laguna" url="skin/spots/laguna.png" onhover="showtext(Ver Pichilaguna);" ath="-110.746" atv="14.456"/>
 		<hotspot name="spot3" handcursor="true" scale="0.4" zorder="50" edge="bottom" align="bottom" alpha="1" style="hs_gallery" galleryname="parque" title_gallery="Parque" url="skin/spots/parque.png" onhover="showtext(Ver Parque);" ath="-116.858" atv="37.426"/>
 		<hotspot name="spot4" handcursor="true" scale="0.4" zorder="50" edge="bottom" align="bottom" alpha="1" style="hs_gallery" galleryname="mirador" title_gallery="Mirador" url="skin/spots/mirador.png" onhover="showtext(Ver Mirador);" ath="-128.416" atv="38.484"/>
-		<hotspot name="spot5" handcursor="true" scale="0.4" zorder="50" edge="bottom" align="bottom" alpha="1" style="hs_gallery" galleryname="clubnautico" title_gallery="Club Nautico" url="skin/spots/ancla.png" onhover="showtext(Ver Club Nautico);" ath="-103.399" atv="40.122"/>
+		<hotspot name="spot5" handcursor="true" scale="0.4" zorder="50" edge="bottom" align="bottom" alpha="1" style="hs_gallery" galleryname="clubnautico" title_gallery="Club Náutico Viento Sur" url="skin/spots/ancla.png" onhover="showtext(Ver Club Nautico);" ath="-103.399" atv="40.122"/>
 
 
 		<hotspot name="hito1" style="skin_hotspotstyle4" url="skin/spots/1.png" ath="23.623" atv="3.345"/>
