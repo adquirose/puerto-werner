@@ -49,7 +49,7 @@ function App() {
   return(
     <>
       <Navbar handleClick={handleClick} />
-      <Krpano/>
+      <Krpano handleClick={handleClick}/>
 
       {sectionActiva && 
         <Background onClick={() => setEstado({...estado, sectionActiva:false})}/>

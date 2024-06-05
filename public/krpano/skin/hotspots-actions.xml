@@ -64,9 +64,7 @@
         width="46" height="46"
     />
 
-
-
-     <action name="generar_spots">
+    <action name="generar_spots">
         for(set(i,%1), i LE %2, inc(i),
             txtadd(nombre_spot, 'ficha', get(i));
             set(spot_ath, get(spot[get(nombre_spot)].ath));

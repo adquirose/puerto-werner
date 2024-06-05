@@ -112,14 +112,10 @@
 	<action name="hide_gallery">
 		tween(layer[gallery].alpha, 0);
 		skin_showskin();
-		mostrar_mapa(true);
-		activar_btn(galeria,false);
 	</action>
 	
 	<action name="show_gallery">
 		skin_hideskin();
-		mostrar_mapa(false);
-		activar_btn(galeria,true);
 		if(%1 != activeGallery, 
 			make_gallery(%1);
 		); 
